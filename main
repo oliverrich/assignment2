@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double totalSales = 95000.00;
+    double estateTaxRate = 0.04;
+    double countyTaxRate = 0.02;
+
+    double estateTax = totalSales * estateTaxRate;
+    double countyTax = totalSales * countyTaxRate;
+    double totalTax = estateTax + countyTax;
+
+    cout << "Total Sales: $" << totalSales << endl;
+    cout << "Estate Tax: $" << estateTax << endl;
+    cout << "County Tax: $" << countyTax << endl;
+    cout << "Total Tax: $" << totalTax << endl;
+
+    return 0;
+}
